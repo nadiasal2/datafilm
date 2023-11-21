@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Form terbaru</title>
+    <title>Form old</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container">
-        <h2>Detail terbaru</h2>
+        <h2>Detail old</h2>
         <form method="post" action="">
             @csrf <!-- CSRF Token -->
             <div class="form-group">
                 <label for="">Judul:</label>
-                <input type="text" class="form-control" id="judul" name="judul" value="{{ $terbaru->judul }}" readonly>
+                <input type="text" class="form-control" id="judul" name="judul" value="{{ $old->judul }}" readonly>
             </div>
 
             <div class="form-group">
                 <label for="">Tahun:</label>
-                <input type="text" class="form-control" id="tahun" name="tahun" value="{{ $terbaru->tahun }}" readonly>
+                <input type="text" class="form-control" id="tahun" name="tahun" value="{{ $old->tahun }}" readonly>
             </div>
 
             <div class="form-group">
                 <label for="">Genre:</label>
-                <input type="text" class="form-control" id="genre" name="genre" value="{{ $terbaru->genre }}" readonly>
+                <input type="text" class="form-control" id="genre" name="genre" value="{{ $old->genre }}" readonly>
             </div>
 
             <div class="form-group">
                 <label for="">Sinopsis:</label>
-                <input type="text" class="form-control" id="sinopsis" name="sinopsis" value="{{ $terbaru->sinopsis }}" readonly>
+                <input type="text" class="form-control" id="sinopsis" name="sinopsis" value="{{ $old->sinopsis }}" readonly>
             </div>
             
 

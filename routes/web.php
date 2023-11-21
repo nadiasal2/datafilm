@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\HTTP\Controllers\TrendingController;
 use App\HTTP\Controllers\TerbaruController;
+use App\HTTP\Controllers\OldController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +33,9 @@ Route::get('/home', function () {
 
 Route::get('/terbaru', [TerbaruController::class, 'index']);
 Route::get('/terbaru/detail/{terbaruu}', [TerbaruController::class, 'show']);
-  
+
 Route::get('/trending', [TrendingController::class, 'index']);
 Route::get('/trending/detail/{tren}', [TrendingController::class, 'show']);
+
+Route::get('/old', [OldController::class, 'index']);
+Route::get('/old/detail/{lama}', [OldController::class, 'show']);

@@ -22,7 +22,7 @@
                         <td>{{ $terbaruu->genre }}</td>
                         <td>{{ $terbaruu->sinopsis }}</td>
                         <td>
-                            <a href="/terbaruu/detail/{{ $terbaruu->id }}" class="btn btn-primary">Detail</a>
+                            <a href="/terbaru/detail/{{ $terbaruu->id }}" class="btn btn-primary">Detail</a>
                         </td>
                     </tr>
                 @endforeach

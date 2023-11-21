@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('trendings', function (Blueprint $table) {
-            $table->string('id'); 
+            $table->id();  
             $table->string('judul'); 
             $table->string('tahun' ); 
             $table->string('genre');
